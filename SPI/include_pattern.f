@@ -1,0 +1,8 @@
+`include "CONTROLLER/controller_bos.v"
+`include "DD_PUF_MACRO/dd_puf.v"
+`include "XOR_PUF_MACRO/xor_puf.v"
+`include "DD_PUF_MACRO/dd_puf_128bit.v"
+`include "XOR_PUF_MACRO/xor_puf_128bit.v"
+`include "XOR_PUF_STIMULI/controller_xor.v"
+`include "DD_PUF_STIMULI/controller_dd.v"
+`include "SPI_MACRO/SPI.v"

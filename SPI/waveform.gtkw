@@ -1,0 +1,78 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Nov  9 16:39:02 2024
+[*]
+[dumpfile] "/home/ace96/University/TESTCHIP_2024/SPI/waveform.vcd"
+[dumpfile_mtime] "Sat Nov  9 16:37:34 2024"
+[dumpfile_size] 371456
+[savefile] "/home/ace96/University/TESTCHIP_2024/SPI/waveform.gtkw"
+[timestart] 0
+[size] 1920 1001
+[pos] 25 22
+*-24.320023 35000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_top_digital_part.
+[treeopen] tb_top_digital_part.my_digital_instance.
+[treeopen] tb_top_digital_part.my_digital_instance.spi_I.
+[sst_width] 292
+[signals_width] 695
+[sst_expanded] 1
+[sst_vpaned_height] 135
+@28
+tb_top_digital_part.CLK
+@200
+-
+-SPI
+@22
+tb_top_digital_part.my_digital_instance.RECEIVED[135:0]
+tb_top_digital_part.my_digital_instance.TO_SEND[135:0]
+@200
+-
+-Segnali per i PUF
+@28
+tb_top_digital_part.my_digital_instance.I1_XOR
+tb_top_digital_part.my_digital_instance.I2_XOR
+@29
+tb_top_digital_part.my_digital_instance.START_DD
+@28
+tb_top_digital_part.my_digital_instance.DONE_DD
+tb_top_digital_part.my_digital_instance.DONE_XOR
+@29
+tb_top_digital_part.my_digital_instance.RESET_DD
+@28
+tb_top_digital_part.my_digital_instance.RESET_XOR
+@20000
+-
+@200
+-Uscite PUF campionate
+@22
+tb_top_digital_part.my_digital_instance.PUF_OUT_DD_SAMPLED[127:0]
+tb_top_digital_part.my_digital_instance.PUF_OUT_XOR_SAMPLED[127:0]
+@200
+-
+-Valori Registro
+@24
+tb_top_digital_part.my_digital_instance.CNT_VAL[15:0]
+tb_top_digital_part.my_digital_instance.CODE_OUT[7:0]
+@28
+tb_top_digital_part.my_digital_instance.controller_bos_I.TRIG_SIG
+@c02024
+^1 /home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/state_coder.txt
+tb_top_digital_part.my_digital_instance.controller_bos_I.NES[4:0]
+@2028
+^1 /home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/state_coder.txt
+(0)tb_top_digital_part.my_digital_instance.controller_bos_I.NES[4:0]
+^1 /home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/state_coder.txt
+(1)tb_top_digital_part.my_digital_instance.controller_bos_I.NES[4:0]
+^1 /home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/state_coder.txt
+(2)tb_top_digital_part.my_digital_instance.controller_bos_I.NES[4:0]
+^1 /home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/state_coder.txt
+(3)tb_top_digital_part.my_digital_instance.controller_bos_I.NES[4:0]
+^1 /home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/state_coder.txt
+(4)tb_top_digital_part.my_digital_instance.controller_bos_I.NES[4:0]
+@1401200
+-group_end
+@2024
+^1 /home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/state_coder.txt
+tb_top_digital_part.my_digital_instance.controller_bos_I.PRS[4:0]
+[pattern_trace] 1
+[pattern_trace] 0

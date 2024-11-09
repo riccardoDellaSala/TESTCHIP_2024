@@ -1,0 +1,207 @@
+$date
+	Thu Nov  7 19:27:00 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_controller_dd $end
+$var wire 1 ! START_DD $end
+$var wire 1 " RESET_DD $end
+$var wire 128 # PUF_OUT_REG [127:0] $end
+$var wire 1 $ DONE $end
+$var parameter 32 % CLK_PERIOD $end
+$var reg 1 & CLK $end
+$var reg 16 ' CNT_VAL [15:0] $end
+$var reg 8 ( CODE [7:0] $end
+$var reg 128 ) PUF_OUT [127:0] $end
+$var reg 1 * RESET $end
+$scope module uut $end
+$var wire 1 & CLK $end
+$var wire 16 + CNT_VAL [15:0] $end
+$var wire 8 , CODE [7:0] $end
+$var wire 128 - PUF_OUT [127:0] $end
+$var wire 1 * RESET $end
+$var wire 1 . TRIG_SIG $end
+$var parameter 4 / IDLE_STATE $end
+$var parameter 4 0 RESET_STATE $end
+$var parameter 4 1 SAMPLE_STATE $end
+$var parameter 4 2 START_STATE $end
+$var parameter 4 3 WAIT_STATE $end
+$var reg 16 4 CNT [15:0] $end
+$var reg 16 5 CNT_REG [15:0] $end
+$var reg 1 $ DONE $end
+$var reg 3 6 NES [2:0] $end
+$var reg 3 7 PRS [2:0] $end
+$var reg 128 8 PUF_OUT_REG [127:0] $end
+$var reg 1 " RESET_DD $end
+$var reg 1 ! START_DD $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 3
+b10 2
+b11 1
+b0 0
+b1 /
+b1010 %
+$end
+#0
+$dumpvars
+bx 8
+bx 7
+b0 6
+bx 5
+bx 4
+0.
+b10100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101 -
+b0 ,
+b1010 +
+0*
+b10100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101 )
+b0 (
+b1010 '
+0&
+x$
+bx #
+x"
+x!
+$end
+#5000
+b0 7
+b0 #
+b0 8
+0$
+0!
+1"
+b1 5
+b0 4
+1&
+#10000
+b1 6
+0&
+1*
+#15000
+b1 7
+1&
+#20000
+b10 6
+0&
+1.
+b1 (
+b1 ,
+#25000
+b10 7
+b1010 5
+1&
+#30000
+0&
+#35000
+1!
+0"
+b1 4
+1&
+#40000
+0&
+#45000
+b10 4
+1&
+#50000
+0&
+#55000
+b11 4
+1&
+#60000
+0&
+#65000
+b100 4
+1&
+#70000
+0&
+#75000
+b101 4
+1&
+#80000
+0&
+#85000
+b110 4
+1&
+#90000
+0&
+#95000
+b111 4
+1&
+#100000
+0&
+#105000
+b1000 4
+1&
+#110000
+0&
+#115000
+b1001 4
+1&
+#120000
+0&
+0.
+b100 (
+b100 ,
+#125000
+b11 6
+b1010 4
+1&
+#130000
+0&
+#135000
+b100 6
+b11 7
+b1011 4
+1&
+#140000
+0&
+#145000
+b1 6
+b100 7
+b10100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101 #
+b10100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101101001011010010110100101 8
+1$
+b0 4
+1&
+#150000
+0&
+#155000
+b1 7
+0$
+0!
+1"
+1&
+#160000
+0&
+#165000
+1&
+#170000
+0&
+#175000
+1&
+#180000
+0&
+#185000
+1&
+#190000
+0&
+#195000
+1&
+#200000
+0&
+#205000
+1&
+#210000
+0&
+#215000
+1&
+#220000
+0&
