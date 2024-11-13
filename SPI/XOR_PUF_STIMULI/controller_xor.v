@@ -28,7 +28,7 @@ reg [2:0] PRS, NES;
 wire TRIG_SIG = (CODE == 8'd2); // Trigger when CODE == 2
 
 // State machine (Sequential logic)
-always @(posedge CLK or posedge RESET) begin
+always @(posedge CLK) begin
     if (RESET == `RESET_CONDITION) 
         PRS <= RESET_STATE;
     else

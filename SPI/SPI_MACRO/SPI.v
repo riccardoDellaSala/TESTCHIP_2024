@@ -130,8 +130,14 @@ begin
 					begin
 						B_RECEIVED<={B_RECEIVED[LENGTH-1-1:0],B_MOSI[1]};					
 					end
-					else if(NE_SCK)					
+					else if(NE_SCK)		
+					begin			
 						CNT<=CNT+1'b1;	
+						if(CNT+1<LENGTH)
+							MISO<=TO_SEND[LENGTH-2-CNT];
+						else
+							MISO<=TO_SEND[0];
+					end
 				end
 				else
 					MISO<=TO_SEND[0];

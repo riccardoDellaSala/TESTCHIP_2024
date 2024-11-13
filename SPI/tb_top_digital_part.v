@@ -5,7 +5,7 @@ module tb_top_digital_part();
     reg MOSI,CLK,SSEL,SCLK,RESET; //RESET is negate
     wire MISO;
 	reg [`MY_LENGTH-1:0] COMMAND;
-
+	reg [`MY_LENGTH-1:0] TRANSMITTED;
     top_digital_part my_digital_instance (
     .MOSI(MOSI),  
     .CLK(CLK),    
@@ -16,11 +16,12 @@ module tb_top_digital_part();
 );
 
 
+
 	initial begin
 		// Initialize Inputs
         $dumpfile("waveform.vcd");
         $dumpvars();
-
+		TRANSMITTED=`MY_LENGTH'd0;
 		MOSI = 0;
 		SCLK = 0;
 		CLK = 0;
@@ -41,6 +42,10 @@ module tb_top_digital_part();
         msend({8'd2,128'd128}); //excite XOR-PUF in 128 clock cycles
         msend({8'd3,128'd0}); //read the DD-PUF output
         msend({8'd4,128'd0}); //read the XOR-PUF output
+        msend({8'd5,$urandom,$urandom,$urandom,$urandom}); //read the XOR-PUF output
+		mreceive(TRANSMITTED);
+		msend({8'd6,$urandom,$urandom,$urandom,$urandom}); //read the XOR-PUF output
+		
 		#10000;
       $finish;
 
@@ -56,6 +61,33 @@ module tb_top_digital_part();
 	//value for 12 MHz
 	localparam period12=83.3; //	1/(83.3 ns)=12MHz
 	
+	//procedure to move the MOSI to receive a message
+    task mreceive(input [`MY_LENGTH-1:0]TRANSMITTED);
+		localparam period12=83.3;
+		integer j;
+		begin		
+            SSEL = 0;
+			#period12;
+			for(j=0;j<`MY_LENGTH;j=j+1)
+				begin      
+					SCLK=0;      
+					#(period12/2);
+					SCLK = 1;
+					#(period12/20);
+					TRANSMITTED[`MY_LENGTH-1-j]=MISO;
+					#(9*period12/20);
+				end
+			#(period12);
+            SCLK = 0;
+            SSEL = 1;          
+			#(period12);
+			if (my_digital_instance.spi_I.TO_SEND==TRANSMITTED)
+				$display("trasmissione avvenuta correttamente"); 
+			else
+				$display("errore di trasmissione");
+			#100;
+		end
+	endtask
 	//procedure to move the MOSI to receive a message
     task msend(input [`MY_LENGTH-1:0]COMMAND);
 		localparam period12=83.3;

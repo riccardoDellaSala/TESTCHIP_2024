@@ -25,7 +25,8 @@ localparam [4:0]
     STIMULI_XOR_1=4'd4,
     STIMULI_XOR_2=4'd5,
     READ_DD=4'd6,
-    READ_XOR=4'd7;
+    READ_XOR=4'd7,
+    CONTROL_SPI=4'd8;
 
 always @(posedge CLK)
 begin
@@ -71,6 +72,8 @@ begin
                             NES<=READ_DD;
                         8'd4:
                             NES<=READ_XOR;
+                        8'd5:
+                            NES<=CONTROL_SPI;
                         default:
                             NES<=IDLE_STATE;
                     endcase
@@ -118,6 +121,9 @@ begin
                 NES<=IDLE_STATE;
 
             READ_XOR:
+                NES<=IDLE_STATE;
+            
+            CONTROL_SPI:
                 NES<=IDLE_STATE;
 
         default:
@@ -182,6 +188,10 @@ begin
         READ_XOR:
         begin
             TO_SEND<={CODE,PUF_OUT_XOR};   
+        end
+        CONTROL_SPI:
+        begin
+            TO_SEND<={CODE,RECEIVED};   
         end
         default:
         begin
