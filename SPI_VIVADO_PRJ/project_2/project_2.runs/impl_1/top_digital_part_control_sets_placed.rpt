@@ -1,0 +1,88 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Nov 13 01:14:40 2024
+| Host         : aceLap running 64-bit Arch Linux
+| Command      : report_control_sets -verbose -file top_digital_part_control_sets_placed.rpt
+| Design       : top_digital_part
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    16 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    10 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             198 |           39 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             448 |          108 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+---------------------------------------+----------------------------+------------------+----------------+--------------+
+|       Clock Signal       |             Enable Signal             |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------+---------------------------------------+----------------------------+------------------+----------------+--------------+
+|  controller_xor_I/I2_XOR |                                       | controller_xor_I/RESET_XOR |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG           |                                       |                            |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG           | controller_xor_I/CNT_REG              | controller_bos_I/p_0_in    |                2 |              8 |         4.00 |
+|  CLK_IBUF_BUFG           | spi_I/CNT[7]_i_1_n_0                  | controller_bos_I/p_0_in    |                2 |              8 |         4.00 |
+|  CLK_IBUF_BUFG           | controller_dd_I/CNT_REG               | controller_bos_I/p_0_in    |                2 |              8 |         4.00 |
+|  CLK_IBUF_BUFG           | controller_bos_I/CODE_OUT[7]_i_1_n_0  | controller_bos_I/p_0_in    |                5 |             16 |         3.20 |
+|  CLK_IBUF_BUFG           | spi_I/B_RECEIVED[135]_i_1_n_0         | controller_bos_I/p_0_in    |               21 |            136 |         6.48 |
+|  CLK_IBUF_BUFG           | spi_I/FSM_onehot_PRS_reg_n_0_[2]      | controller_bos_I/p_0_in    |               32 |            136 |         4.25 |
+|  CLK_IBUF_BUFG           | controller_bos_I/TO_SEND[135]_i_1_n_0 | controller_bos_I/p_0_in    |               44 |            136 |         3.09 |
+|  CLK_IBUF_BUFG           |                                       | controller_bos_I/p_0_in    |               38 |            197 |         5.18 |
++--------------------------+---------------------------------------+----------------------------+------------------+----------------+--------------+
+
+

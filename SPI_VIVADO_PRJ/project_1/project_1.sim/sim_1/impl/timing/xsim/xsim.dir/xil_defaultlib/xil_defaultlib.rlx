@@ -1,0 +1,16 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/controller_bos.v,1731170015,verilog,,,,controller_bos,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf.v,1731077141,verilog,,,,DD_PUF,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf_128bit.v,1731078329,verilog,,,,DD_PUF_128,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_STIMULI/controller_dd.v,1731332831,verilog,,,,controller_dd,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v,1731426257,verilog,,,,SPI,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v,1731077258,verilog,,,,XOR_PUF,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf_128bit.v,1731078339,verilog,,,,XOR_PUF_128,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v,1731332822,verilog,,,,controller_xor,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/include_pattern.f,1731079030,verilog,,,/home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/controller_bos.v;/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf.v;/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v;/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf_128bit.v;/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf_128bit.v;/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v;/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_STIMULI/controller_dd.v;/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v,,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/tb_top_digital_part.v,1731420230,verilog,,,/home/ace96/University/TESTCHIP_2024/SPI/top_digital_part.v,tb_top_digital_part,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI/top_digital_part.v,1731148517,verilog,,,/home/ace96/University/TESTCHIP_2024/SPI/include_pattern.f,top_digital_part,,,,,,,,
+/home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_1/project_1.sim/sim_1/impl/timing/xsim/tb_top_digital_part_time_impl.v,1731431516,verilog,,/home/ace96/University/TESTCHIP_2024/SPI/tb_top_digital_part.v,,glbl,,,,,,,,

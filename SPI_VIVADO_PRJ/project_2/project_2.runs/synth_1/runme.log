@@ -1,0 +1,454 @@
+
+*** Running vivado
+    with args -log top_digital_part.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_digital_part.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_digital_part.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_2/project_2.srcs/utils_1/imports/synth_1/tb_top_digital_part.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_2/project_2.srcs/utils_1/imports/synth_1/tb_top_digital_part.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_digital_part -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-1810] synth_design options have changed between reference and incremental; A full resynthesis will be run
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 146783
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2107.828 ; gain = 405.684 ; free physical = 5999 ; free virtual = 52385
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'controller_bos' [/home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/controller_bos.v:205]
+INFO: [Synth 8-9937] previous definition of design element 'controller_bos' is here [/home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/controller_bos.v:205]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'DD_PUF' [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf.v:20]
+INFO: [Synth 8-9937] previous definition of design element 'DD_PUF' is here [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf.v:20]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'XOR_PUF' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v:22]
+INFO: [Synth 8-9937] previous definition of design element 'XOR_PUF' is here [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v:22]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'DD_PUF_128' [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf_128bit.v:20]
+INFO: [Synth 8-9937] previous definition of design element 'DD_PUF_128' is here [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf_128bit.v:20]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'XOR_PUF_128' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf_128bit.v:23]
+INFO: [Synth 8-9937] previous definition of design element 'XOR_PUF_128' is here [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf_128bit.v:23]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'controller_xor' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v:169]
+INFO: [Synth 8-9937] previous definition of design element 'controller_xor' is here [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v:169]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'controller_dd' [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_STIMULI/controller_dd.v:142]
+INFO: [Synth 8-9937] previous definition of design element 'controller_dd' is here [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_STIMULI/controller_dd.v:142]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'SPI' [/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v:165]
+INFO: [Synth 8-9937] previous definition of design element 'SPI' is here [/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v:165]
+WARNING: [Synth 8-10458] `include directive is not isolated on its own line [/home/ace96/University/TESTCHIP_2024/SPI/top_digital_part.v:4]
+INFO: [Synth 8-6157] synthesizing module 'top_digital_part' [/home/ace96/University/TESTCHIP_2024/SPI/top_digital_part.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DD_PUF_128' [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf_128bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DD_PUF' [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DD_PUF' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DD_PUF_128' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_MACRO/dd_puf_128bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'XOR_PUF_128' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf_128bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'XOR_PUF' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'XOR_PUF' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'XOR_PUF_128' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf_128bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SPI' [/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v:39]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'SPI' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v:3]
+INFO: [Synth 8-6157] synthesizing module 'controller_xor' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'controller_xor' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v:4]
+INFO: [Synth 8-6157] synthesizing module 'controller_dd' [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_STIMULI/controller_dd.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'controller_dd' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_STIMULI/controller_dd.v:4]
+INFO: [Synth 8-6157] synthesizing module 'controller_bos' [/home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/controller_bos.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'controller_bos' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/controller_bos.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'top_digital_part' (0#1) [/home/ace96/University/TESTCHIP_2024/SPI/top_digital_part.v:4]
+WARNING: [Synth 8-6014] Unused sequential element I2_XOR_reg was removed.  [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2194.797 ; gain = 492.652 ; free physical = 5914 ; free virtual = 52297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2212.609 ; gain = 510.465 ; free physical = 5902 ; free virtual = 52285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2212.609 ; gain = 510.465 ; free physical = 5902 ; free virtual = 52285
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2212.609 ; gain = 0.000 ; free physical = 5902 ; free virtual = 52285
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_2/project_2.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_2/project_2.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_2/project_2.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_digital_part_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_digital_part_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2362.359 ; gain = 0.000 ; free physical = 5855 ; free virtual = 52237
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2362.395 ; gain = 0.000 ; free physical = 5855 ; free virtual = 52237
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5883 ; free virtual = 52266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5883 ; free virtual = 52266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5883 ; free virtual = 52266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5884 ; free virtual = 52268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5884 ; free virtual = 52268
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'PRS_reg' in module 'SPI'
+INFO: [Synth 8-802] inferred FSM for state register 'PRS_reg' in module 'controller_xor'
+INFO: [Synth 8-802] inferred FSM for state register 'PRS_reg' in module 'controller_dd'
+WARNING: [Synth 8-327] inferring latch for variable 'OUT_reg' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v:17]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              001 |                               00
+                     ONE |                              010 |                               01
+                     TWO |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PRS_reg' using encoding 'one-hot' in module 'SPI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             RESET_STATE |                           000001 |                              000
+              IDLE_STATE |                           000010 |                              001
+            START_STATE1 |                           000100 |                              010
+            START_STATE2 |                           001000 |                              011
+            START_STATE3 |                           010000 |                              100
+              WAIT_STATE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PRS_reg' using encoding 'one-hot' in module 'controller_xor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             RESET_STATE |                              000 |                              000
+              IDLE_STATE |                              001 |                              001
+             START_STATE |                              010 |                              010
+            SAMPLE_STATE |                              011 |                              011
+              WAIT_STATE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PRS_reg' using encoding 'sequential' in module 'controller_dd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5893 ; free virtual = 52276
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[1].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[2].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[3].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[4].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[5].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[6].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[7].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[8].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[9].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[10].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[11].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[12].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[13].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[14].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[15].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[16].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[17].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[18].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[19].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[20].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[21].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[22].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[23].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[24].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[25].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[26].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[27].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[28].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[29].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[30].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[31].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[32].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[33].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[34].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[35].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[36].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[37].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[38].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[39].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[40].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[41].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[42].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[43].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[44].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[45].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[46].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[47].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[48].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[49].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[50].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[51].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[52].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[53].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[54].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[55].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[56].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[57].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[58].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[59].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[60].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[61].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[62].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[63].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[64].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[65].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[66].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[67].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[68].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[69].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[70].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[71].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[72].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[73].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[74].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[75].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[76].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[77].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[78].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[79].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[80].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[81].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[82].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[83].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[84].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[85].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[86].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[87].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[88].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[89].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[90].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[91].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[92].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[93].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[94].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[95].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[96].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[97].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[98].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[99].DD_PUF_INST'
+INFO: [Synth 8-223] decloning instance 'DD_PUF_128_I/genblk1[0].DD_PUF_INST' (DD_PUF) to 'DD_PUF_128_I/genblk1[100].DD_PUF_INST'
+INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : synth_design options have changed between reference and incremental
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
++---Registers : 
+	              136 Bit    Registers := 4     
+	              128 Bit    Registers := 2     
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   3 Input  136 Bit        Muxes := 2     
+	   6 Input  136 Bit        Muxes := 1     
+	   2 Input  136 Bit        Muxes := 1     
+	   6 Input  128 Bit        Muxes := 1     
+	   5 Input  128 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   7 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   5 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 5     
+	   6 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5914 ; free virtual = 52305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5948 ; free virtual = 52339
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5948 ; free virtual = 52338
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5948 ; free virtual = 52338
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |     1|
+|4     |LUT2   |   167|
+|5     |LUT3   |    29|
+|6     |LUT4   |    48|
+|7     |LUT5   |    37|
+|8     |LUT6   |   272|
+|9     |MUXF7  |    20|
+|10    |MUXF8  |    10|
+|11    |FDRE   |   640|
+|12    |FDSE   |     7|
+|13    |LDC    |     1|
+|14    |IBUF   |     5|
+|15    |OBUFT  |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2362.395 ; gain = 510.465 ; free physical = 5965 ; free virtual = 52356
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2362.395 ; gain = 660.250 ; free physical = 5965 ; free virtual = 52356
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2362.395 ; gain = 0.000 ; free physical = 6248 ; free virtual = 52639
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2362.395 ; gain = 0.000 ; free physical = 6258 ; free virtual = 52649
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instance 
+
+Synth Design complete | Checksum: 2d68d37d
+INFO: [Common 17-83] Releasing license: Synthesis
+152 Infos, 6 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 2362.395 ; gain = 1008.195 ; free physical = 6258 ; free virtual = 52649
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2008.258; main = 1672.404; forked = 417.257
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3313.398; main = 2362.363; forked = 983.051
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2386.371 ; gain = 0.000 ; free physical = 6258 ; free virtual = 52649
+INFO: [Common 17-1381] The checkpoint '/home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_2/project_2.runs/synth_1/top_digital_part.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_digital_part_utilization_synth.rpt -pb top_digital_part_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 01:14:13 2024...

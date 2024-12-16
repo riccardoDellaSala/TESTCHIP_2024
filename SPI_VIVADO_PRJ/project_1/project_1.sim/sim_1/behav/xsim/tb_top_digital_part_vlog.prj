@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../SPI/SPI_MACRO/SPI.v" \
+"../../../../../../SPI/DD_PUF_MACRO/dd_puf.v" \
+"../../../../../../SPI/DD_PUF_MACRO/dd_puf_128bit.v" \
+"../../../../../../SPI/top_digital_part.v" \
+"../../../../../../SPI/XOR_PUF_MACRO/xor_puf.v" \
+"../../../../../../SPI/XOR_PUF_MACRO/xor_puf_128bit.v" \
+"../../../../../../SPI/DD_PUF_STIMULI/tb_controller.v" \
+"../../../../../../SPI/CONTROLLER/tb_controller_bos.v" \
+"../../../../../../SPI/XOR_PUF_STIMULI/tb_controller_xor.v" \
+"../../../../../../SPI/tb_top_digital_part.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

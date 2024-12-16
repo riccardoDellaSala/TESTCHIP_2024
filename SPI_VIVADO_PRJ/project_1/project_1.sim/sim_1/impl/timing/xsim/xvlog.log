@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_1/project_1.sim/sim_1/impl/timing/xsim/tb_top_digital_part_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI
+INFO: [VRFC 10-311] analyzing module XOR_PUF
+INFO: [VRFC 10-311] analyzing module XOR_PUF_128
+INFO: [VRFC 10-311] analyzing module controller_bos
+INFO: [VRFC 10-311] analyzing module controller_dd
+INFO: [VRFC 10-311] analyzing module controller_xor
+INFO: [VRFC 10-311] analyzing module top_digital_part
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ace96/University/TESTCHIP_2024/SPI/tb_top_digital_part.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_bos
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'controller_bos' [/home/ace96/University/TESTCHIP_2024/SPI/CONTROLLER/controller_bos.v:4]
+INFO: [VRFC 10-311] analyzing module DD_PUF
+INFO: [VRFC 10-311] analyzing module XOR_PUF
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'XOR_PUF' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf.v:2]
+INFO: [VRFC 10-311] analyzing module DD_PUF_128
+INFO: [VRFC 10-311] analyzing module XOR_PUF_128
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'XOR_PUF_128' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_MACRO/xor_puf_128bit.v:2]
+INFO: [VRFC 10-311] analyzing module controller_xor
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'controller_xor' [/home/ace96/University/TESTCHIP_2024/SPI/XOR_PUF_STIMULI/controller_xor.v:4]
+INFO: [VRFC 10-311] analyzing module controller_dd
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'controller_dd' [/home/ace96/University/TESTCHIP_2024/SPI/DD_PUF_STIMULI/controller_dd.v:4]
+INFO: [VRFC 10-311] analyzing module SPI
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'SPI' [/home/ace96/University/TESTCHIP_2024/SPI/SPI_MACRO/SPI.v:3]
+WARNING: [VRFC 10-8725] `include directive is not isolated on its own line [/home/ace96/University/TESTCHIP_2024/SPI/top_digital_part.v:4]
+INFO: [VRFC 10-311] analyzing module top_digital_part
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'top_digital_part' [/home/ace96/University/TESTCHIP_2024/SPI/top_digital_part.v:4]
+INFO: [VRFC 10-311] analyzing module tb_top_digital_part
+WARNING: [VRFC 10-3380] identifier 'period50' is used before its declaration [/home/ace96/University/TESTCHIP_2024/SPI/tb_top_digital_part.v:38]

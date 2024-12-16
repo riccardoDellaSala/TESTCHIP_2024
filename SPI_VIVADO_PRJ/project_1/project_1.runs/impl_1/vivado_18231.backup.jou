@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov 12 17:14:22 2024
+# Process ID: 18231
+# Current directory: /home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_1/project_1.runs/impl_1
+# Command line: vivado -log top_digital_part.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_digital_part.tcl -notrace
+# Log file: /home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_1/project_1.runs/impl_1/top_digital_part.vdi
+# Journal file: /home/ace96/University/TESTCHIP_2024/SPI_VIVADO_PRJ/project_1/project_1.runs/impl_1/vivado.jou
+# Running On: aceLap, OS: Linux, CPU Frequency: 731.482 MHz, CPU Physical cores: 14, Host memory: 33309 MB
+#-----------------------------------------------------------
+source top_digital_part.tcl -notrace
